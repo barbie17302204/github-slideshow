@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+	New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 2: Start Your Web Project
+
+    Mujeres Artesanas Cuajimalpa
+	Author: Barbara Ruiz Smith
+	Date: 02/04/2020 
+
+ Filename: mac_products.html
+-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+	<title>Mujeres Artesanas Cuajimalpa</title>
+	<link href="mac_layout.css" rel="stylesheet" type="text/css" />
+   <link href="mac_styles.css" rel="stylesheet" type="text/css" />
+   <link href="mac_reset.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<img src="mac.logo2.png" alt="Mujeres Artesanas Cuajimalpa" />
+   </header>
+   
+   <nav>
+      <ul>
+         <li><a href="mac_index.html">Introduccion</a></li>
+         <li><a href="mac_productos.html">Productos</a></li>
+         <li><a href="mac_historia.html">Historia</a></li>
+         
+      </ul>
+   </nav>
+
+    <div>
+    <h1>Productos</h1>
+  </div>
+
+   <table class="productos">
+    <caption>Mercancia Disponible</caption>
+    <thead>
+      <tr>
+        <th>Tejidos</th>
+        <th>Bordados</th>
+        <th>Bisuteria</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td colspan="2">Servilletas</td>
+        <td>Aretes</td>
+        
+       </tr>
+      
+      <tr>
+        <td colspan="2">Cobijas</td>
+        <td>Collares</td>
+        
+         </tr>
+
+      <tr>
+        <td>Bufandas</td>
+        <td>Toallas</td>
+        <td>Pulseras</td>
+
+        </tr>
+        <tr>
+          <td>Sueteres</td>
+          <td>Manteles</td>
+          <td>LLaveros</td>
+        </tr>
+      </tbody>  
+     </table>
+
+      <p>Para informacion de precios y tallas, llena las formas de abajo.</p>
+
+     <form id="info" action="http://www.example.com/productos/forma" method="post">
+
+      <fieldset id="custInfo">
+         <legend>Informacion del Cliente</legend>
+
+         <div class="formRow">
+         <label for="nombre">Nombre*</label>
+         <input name="custNombre" id="nombre" type="text" placeholder="nombre y apellido" />
+         </div>
+
+         <div class="formRow">
+         <label for="telefono">Telefono</label>
+         <input name="custTelefono" id="telefono" type="tel" />
+         </div>
+
+         <div class="formRow">
+         <label for="mail">E-mail*</label>
+         <input name="custEmail" id="mail" type="email" />
+         </div>        
+         
+         <div class="formRow">
+          <label for="tipo">Tipo de Producto</label>
+          <select name="tipodeProducto" id="tipo">
+            <option value="tipo1">Tejidos</option>
+            <option value="tipo2">Bordados</option>
+            <option value="tipo3">Bisuteria</option>
+          </select>
+        </div>
+
+         <input name="agregaMe" id="agreGA" value="yes" type="checkbox" />
+         <label for="agreGA">Agregame para mas informacion sobre especiales!</label>
+
+      </fieldset>
+
+           <fieldset id="proDetalle">
+           <legend>Preguntas sobre el producto</legend>
+
+             <div class="formRow">
+               <label>Quiere que se lo enviemos?</label>
+               <fieldset class="optGroup">
+                  <label for="eSi">Si</label>
+                  <input name="lEnvio" id="eSi" value="si" type="radio" />
+                  <label for="eNo">No</label>
+                  <input name="lEnvio" id="eNo" value="no" type="radio" />
+               </fieldset>
+            </div>
+
+            <label for="preBox">Preguntanos mas a detalle!</label>
+            <textarea name="cliePre" id="preBox"></textarea>
+
+
+          </fieldset>
+       </form>
+
+
+
+<footer>
+      <address>
+      Mujeres Artesanas Cuajimalpa &#8226; Calle Mexico 8. &#8226; Cuajimalpa, DF 
+      05000 &#8226; 55.1363.9654
+      </address>
+   </footer>
+   
+</body>
+</html>

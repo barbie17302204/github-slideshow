@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3: Create a Layout for Your Web Project
+   
+   Reset Style Sheet Create Your Web Project
+   Author: Barbara Ruiz Smith
+   Date: 02/16/2020  
+   
+   Filename: mac_reset.css
+
+*/
+
+/* Structural Styles */
+
+article, aside, footer, header, main, nav, section, div {
+	display: block;
+}
+
+
+/* Typographic Styles */
+

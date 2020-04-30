@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: Quicksand;
+   src: url(Quicksand-Regular.woff) format('woff'), 
+        url(Quicksand-Regular.ttf) format('truetype');
+    }
+
+    
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Tutorial Case
+   
+   TSS Typographic Style Sheet
+   Author: Barbara Ruiz Smith
+   Date:   02/07/2020
+   
+   Filename: mac_styles.css
+
+*/
+
+
+
+/* HTML and Body Styles */
+
+html {
+   background-image: url(Cuajimalpa.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+body {
+   border-left: 1px solid rgb(112, 128, 144);
+   border-right: 1px solid rgb(112, 128, 144);
+}
+
+body {
+   color: rgb(91, 91, 91);
+   background-color: ivory;
+   font-family: Verdana, Geneva, sans-serif;	
+}
+
+
+/* Heading Styles */
+
+h1 {
+   font-size: 2.2em;
+   color: blue;
+   background-color: rgb(135, 206, 235);
+
+}
+
+h2 {
+   font-size: 1.5em;
+   color: blue;
+   background-color: rgb(135, 206, 235);
+}
+
+h1, h2 {
+   font-family: Quicksand, Verdana, Geneva, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+
+article#nosotras_mac h1 {
+   color: blue;
+   background-color: rgb(135, 206, 235);
+}
+
+article h1 {
+color: blue;
+   background-color: rgb(135, 206, 235);
+}
+
+article#nosotras_mac h2 {
+   color: blue;
+   background-color: rgb(135, 206, 235);
+}
+
+   
+/* Aside and Blockquote Styles */
+
+aside {
+   font-size: 0.9em;
+}
+
+aside blockquote {
+   color: rgb(176, 224, 230);
+   margin: 5px 2px;	
+	quotes: "\201C" "\201D";
+}
+
+aside blockquote::before {
+   content: open-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.1em;
+   
+
+}
+
+aside blockquote::after {
+   content: close-quote;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.1em;
+   
+
+}
+aside blockquote {
+   background: url(mac_speech.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   -webkit-filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+   filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+   padding: 15px;
+}
+
+/* Navigation Styles */	
+
+nav {
+   font-size: 0.8em;
+}
+
+nav > ul {
+   line-height: 2em;
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+nav > ul > li.newgroup {
+   margin-top: 20px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+   color: rgb(151, 151, 151);
+   text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+   color: rgb(128, 0, 128);
+	text-decoration: underline;
+}
+ 
+div > ul {
+   list-style-type: disc;
+}
+
+div > h1 {
+   color: blue;
+background-color: rgb(135, 206, 235);
+
+}
+
+
+/* Footer Styles */
+
+body > footer address {
+   background-color: rgb(0,128,128);
+   color: white;
+   color: rgba(255, 255, 255, 0.7);
+   font: normal small-caps bold 0.9em/3em 
+         Quicksand, Verdana, Geneva, sans-serif;
+   text-align: center;
+}
+
+
+/* New Styles Added Below */
+
+/* ================================
+   Mobile Styles: 0px to 480px
+   ================================
+  */
+ @media only screen and (max-width: 480px) {
+
+ }
+
+
+
+/* ==================================
+   Tablet  Styles: 481px and greater
+   ==================================
+  */
+@media only screen and (min-width: 481px) {
+
+}
+
+
+/* =================================
+   Desktop Styles: 769 and greater
+   =================================
+*/
+@media only screen and (min-width: 769px) {
+
+}
+
+/* Table Styles */
+table.productos {
+   background: white;
+   border-collapse: collapse;
+   border: 10px outset rgb(135, 206, 235);
+   font-size: 0.75em;
+   width: 100%;
+}
+
+
+
+/* Table Cell Styles */
+table.productos th, table.productos td {
+   border: 1px solid blue;
+}
+
+
+
+
+/* Table Caption Styles */
+table.productos caption {
+   caption-side: bottom;
+   text-align: right;
+}
+
+
+
+/* Row Group Styles */
+table.productos thead {
+   background: rgb(135, 206, 235);
+   color: navy;
+}
+
+table.productos thead tr {
+   height: 30px;
+}
+
+table.productos tbody tr {
+   height: 40px;
+   background-color: rgb(175, 238, 238);
+}
+
+audio, video {
+   box-shadow: rgb(51, 51, 51) 8px 8px 15px;
+   display: block;
+   margin: 10px auto;
+   width: 90%
+}
